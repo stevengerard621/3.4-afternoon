@@ -1,0 +1,26 @@
+
+.card {
+    margin-top: 50px;
+}
+
+.card-content {
+    background: whitesmoke;
+    position: relative;
+}
+.name {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.index {
+    position: absolute;
+    top: 2px;
+    right: 30px;
+}
+
+.favorite-movie {
+  margin-left: 60px;
+}
