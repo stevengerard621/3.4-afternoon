@@ -22,7 +22,7 @@ class Card extends Component {
                     <p className='info'><strong>Employer: </strong>{person.employer}</p> 
                     <p><strong>Title: </strong>{person.title}</p>
                     <p><strong>Favorite Movie: </strong></p>
-        {person.favoriteMovies.map((e, i) => <p className="favorite-movie" key={e}>{i+1}. {e}</p>)}
+                    {person.favoriteMovies.map((e, i) => <p className="favorite-movie" key={e}>{i+1}. {e}</p>)}
                 </div>
             </div>
             

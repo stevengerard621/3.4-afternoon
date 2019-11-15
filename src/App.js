@@ -26,6 +26,9 @@ class App extends Component{
   }
 
   render() {
+    var i = this.state.i;
+    var disablePrev = i === 0 ? true : false;
+    var disableNext = i <= this.state.people.length-2 ? false : true;
     return (
       <body className="App">
         <header className='app-header'>
@@ -35,8 +38,8 @@ class App extends Component{
           <Card person={this.state.people[this.state.i]}/>
         </div>
         <div className='footer container'>
-          <button><i className="fas fa-chevron-left"></i>Previous</button>
-          <button>Next<i className="fas fa-chevron-right"></i></button>
+          <button  disabled={disablePrev} name="previous" onClick={this.handleClick}><i className="fas fa-chevron-left"></i>Previous</button>
+          <button  disabled={disableNext} name="next"onClick={this.handleClick}>Next<i className="fas fa-chevron-right"></i></button>
         </div>
       </body>
     );
